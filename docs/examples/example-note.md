@@ -4,7 +4,7 @@
 **Journal:** IEEE Transactions on Industrial Electronics  
 **Volume / Issue / Pages:** Vol. 68, No. 3, pp. 1234–1245  
 **Year:** 2022  
-**DOI / Link:** [https://doi.org/10.1109/TIE.2022.3140012](https://doi.org/10.1109/TIE.2022.3140012)
+**DOI / Link:** [https://doi.org/10.1109/Andescon.2012.16](https://doi.org/10.1109/Andescon.2012.16)
 
 ---
 

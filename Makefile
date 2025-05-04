@@ -7,6 +7,7 @@ help:
 	@echo "  make serve         # Run mkdocs server (background)"
 	@echo "  make deploy        # Deploy to GitHub Pages"
 	@echo "  make activate      # Activate the virtual environment (uv)"
+	@echo "  make bib           # Generate references.bib from notes"
 
 newnote:
 	@if [ -z "$(TITLE)" ]; then \
@@ -32,3 +33,7 @@ deploy:
 
 activate:
 	@echo "Run: source .venv/bin/activate"
+
+bib:
+	@python generate_bib.py
+	@echo "✔ references.bib updated."
