@@ -1,0 +1,8 @@
+site_name: Research Notes
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Notes:
+      - Template: notes/en/note-template.md
