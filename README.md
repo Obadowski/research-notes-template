@@ -1,0 +1,1 @@
+[![Use this template](https://img.shields.io/badge/Use%20this-template-blue)](https://github.com/Obadowski/research-notes-template/generate)
