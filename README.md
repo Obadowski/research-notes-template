@@ -2,6 +2,14 @@
 
 A template repository for creating structured, version-controlled summaries of scientific articles using [MkDocs](https://www.mkdocs.org/) and the [Material theme](https://squidfunk.github.io/mkdocs-material/).
 
+## 📑 Table of Contents
+
+- [How to Use](#-how-to-use)
+- [Project Structure](#-structure)
+- [Makefile Commands](#-makefile-commands)
+- [Generating references.bib](#-generating-referencesbib)
+- [License](#-license)
+
 ---
 
 ## 🔧 How to Use
@@ -71,11 +79,12 @@ Your site will be available at:
     ├── requirements.txt
     ├── docs/
     │   ├── index.md
+    │   ├── examples/
+    │   │  └── example-note.md
     │   ├── notes/
-    │   │   └── en/
-    │   │       └── note-template.md
+    │   │  └── note-template.md
     │   └── templates/
-    │       └── note-template.md
+    │      └── note-template.md
 ---
 
 ## 🛠 Makefile Commands
@@ -118,6 +127,28 @@ List all available commands: (Nobody can remember everything all the time)
 ```bash
 make help
 ```
+---
+
+## 🧾 Generating `references.bib`
+
+The project includes a script to extract DOI links from all notes and automatically fetch full BibTeX entries using the CrossRef API.
+
+### 🔁 How it works
+
+- Recursively scans all `.md` files inside `docs/` (excluding `templates/`)
+- Searches for lines like:
+
+```markdown
+**DOI / Link:** [Some Link](https://doi.org/10.XXXX/abc123)
+```
+- Fetches full BibTeX entries using CrossRef
+- Writes output to references.bib
+
+### ▶️ Usage
+```bash
+make bib
+```
+This runs generate_bib.py and updates references.bib in the project root.
 
 ---
 
