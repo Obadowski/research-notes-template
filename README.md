@@ -76,6 +76,48 @@ Your site will be available at:
     │   │       └── note-template.md
     │   └── templates/
     │       └── note-template.md
+---
+
+## 🛠 Makefile Commands
+
+This project includes a `Makefile` to simplify common tasks:
+
+### ✅ Create a New Note
+
+Generates a new Markdown file based on the template and appends it to `mkdocs.yml`.
+
+```bash
+make newnote TITLE="Your Note Title"
+```
+
+- Converts the title into a slug.
+- Copies the note-template.md to docs/notes/.
+- Replaces the # Title line.
+- Adds entry to the nav: section of mkdocs.yml.
+
+### ✅ Run MkDocs Server
+Starts the MkDocs development server:
+```bash
+make serve
+```
+
+### ✅ Deploy to GitHub Pages
+Builds and pushes to the gh-pages branch:
+```bash
+make deploy
+```
+
+### ✅ Environment Activation
+Prints the command to activate your uv virtual environment:
+```bash
+make activate
+```
+
+### ✅ Help
+List all available commands: (Nobody can remember everything all the time)
+```bash
+make help
+```
 
 ---
 
