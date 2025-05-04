@@ -174,4 +174,4 @@ cython_debug/
 .pypirc
 
 # Bibtex files that does not naturally belong to the server
-.bib
+*.bib
