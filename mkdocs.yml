@@ -7,5 +7,3 @@ nav:
   - Notes:
       - Template: notes/note-template.md
       - Example: examples/example-note.md
-  - sample: notes/sample.md
-  - sample2: notes/sample2.md
