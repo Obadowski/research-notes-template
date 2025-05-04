@@ -6,3 +6,4 @@ nav:
   - Home: index.md
   - Notes:
       - Template: notes/en/note-template.md
+      - Example: examples/example-note.md
