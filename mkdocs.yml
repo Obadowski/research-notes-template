@@ -5,5 +5,7 @@ theme:
 nav:
   - Home: index.md
   - Notes:
-      - Template: notes/en/note-template.md
+      - Template: notes/note-template.md
       - Example: examples/example-note.md
+  - sample: notes/sample.md
+  - sample2: notes/sample2.md

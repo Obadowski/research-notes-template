@@ -28,7 +28,7 @@ uv pip install -r requirements.txt
 ---
 ### 3. Add Your Notes
 
-- Create new files in `docs/notes/en/`
+- Create new files in `docs/notes/`
 - Use the provided template: `docs/templates/note-template.md`
 - Update the navigation in `mkdocs.yml` under the `nav:` section
 
